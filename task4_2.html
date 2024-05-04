@@ -1,0 +1,23 @@
+<!-- 
+2. Create a HTML page with textfield. Show some effects on the textfield when the following events occurred:
+  a. Onchange
+  b. Onfocus
+  c. onblur
+-->
+<input type="text" id="textfield">
+
+<script>
+  let textfield = document.getElementById("textfield");
+
+  textfield.onchange = function() {
+    textfield.style.backgroundColor = "yellow";
+  };
+
+  textfield.onfocus = function() {
+    textfield.style.backgroundColor = "blue";
+  };
+
+  textfield.onblur = function() {
+    textfield.style.backgroundColor = "white";
+  };
+</script>

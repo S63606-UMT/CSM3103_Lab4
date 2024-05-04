@@ -1,0 +1,28 @@
+<!-- 
+1. Create a HTML page with <p> paragraph. Change the paragraph color according to the following mouse events
+  a. Onclick, yellow background
+  b. ondblclick, blue background
+  c. onmouseover , red background
+  d. onmouseout, green background 
+-->
+<p id="paragraph">Click me!</p>
+
+<script>
+  let paragraph = document.getElementById("paragraph");
+
+  paragraph.onclick = function() {
+    paragraph.style.backgroundColor = "yellow";
+  };
+
+  paragraph.ondblclick = function() {
+    paragraph.style.backgroundColor = "blue";
+  };
+
+  paragraph.onmouseover = function() {
+    paragraph.style.backgroundColor = "red";
+  };
+
+  paragraph.onmouseout = function() {
+    paragraph.style.backgroundColor = "green";
+  };
+</script>
